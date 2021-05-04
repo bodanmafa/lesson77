@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metods massivov</title>
+</head>
+<body>
+	<script>
+		let vasya = {name: "Вася", age: 25, averageMark: 70};
+		let petya = {name: "Петя", age: 30, averageMark: 100};
+		let masha = {name: "Маша", age: 28, averageMark: 50};
+
+		let users = [ vasya, petya, masha ];
+
+		const students = [ vasya,petya,masha ];
+
+		const allNames = students.map(function(item) {
+			return item.name
+		})
+		console.log(allNames);
+
+		let izya = {name: "Изя", age: 17, averageMark: 49 };
+
+		const userI = student.push(izya);
+		console.log(students);
+
+		const oldStudents = students.filter(function(item) {
+			return item.age > 18
+		})
+		console.log(oldStudents);
+
+		const highMark = students.filter(function(item) {
+			return item.averageMark > 50
+		})
+		console.log(highMark);
+
+		let secondStudent = student;
+		let lexa = {name: "Леха", age: 16, averageMark: 60 };
+		secondStudent[0] = lexa;
+		console.log(secondStudents);
+
+		const petyaUser = student.find(function(item) {
+			return item.name === 'Петя'
+		})
+		console.log(petyaUser);
+	</script>
+</body>
+</html>		
