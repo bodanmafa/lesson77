@@ -22,7 +22,7 @@
 
 		let izya = {name: "Изя", age: 17, averageMark: 49 };
 
-		const userI = student.push(izya);
+		const userI = students.push(izya);
 		console.log(students);
 
 		const oldStudents = students.filter(function(item) {
@@ -35,12 +35,12 @@
 		})
 		console.log(highMark);
 
-		let secondStudent = student;
+		let secondStudents = students;
 		let lexa = {name: "Леха", age: 16, averageMark: 60 };
-		secondStudent[0] = lexa;
+		secondStudents[0] = lexa;
 		console.log(secondStudents);
 
-		const petyaUser = student.find(function(item) {
+		const petyaUser = students.find(function(item) {
 			return item.name === 'Петя'
 		})
 		console.log(petyaUser);
